@@ -1,9 +1,10 @@
 import java.util.Scanner;
+//import the scanner
 public class ScrabbleCalculator
 {
     public static void main(String[] args)
     {
-    
+    // these are the variable of each letter's score and the time each letter can be used
     int bT=2;
     int cT=2;
     int fT=2;
@@ -31,35 +32,6 @@ public class ScrabbleCalculator
     int tT=6;
     int uT=4;
     int blankT=2;
-
-    int bC=0;
-    int cC=0;
-    int fC=0;
-    int hC=0;
-    int jC=0;
-    int kC=0;
-    int mC=0;
-    int pC=0;
-    int qC=0;
-    int vC=0;
-    int wC=0;
-    int xC=0;
-    int yC=0;
-    int zC=0;
-    int aC=0;
-    int dC=0;
-    int eC=0;
-    int gC=0;
-    int iC=0;
-    int lC=0;
-    int nC=0;
-    int oC=0;
-    int rC=0;
-    int sC=0;
-    int tC=0;
-    int uC=0;
-    int blankC=0;
-
 
     int a=1;
     int e=a;
@@ -94,10 +66,43 @@ public class ScrabbleCalculator
     int q=10;
     int z=q;
 
+//these variables help to count each letter in the word
+    int bC=0;
+    int cC=0;
+    int fC=0;
+    int hC=0;
+    int jC=0;
+    int kC=0;
+    int mC=0;
+    int pC=0;
+    int qC=0;
+    int vC=0;
+    int wC=0;
+    int xC=0;
+    int yC=0;
+    int zC=0;
+    int aC=0;
+    int dC=0;
+    int eC=0;
+    int gC=0;
+    int iC=0;
+    int lC=0;
+    int nC=0;
+    int oC=0;
+    int rC=0;
+    int sC=0;
+    int tC=0;
+    int uC=0;
+    int blankC=0;
+
+
+
+
     String build="";
     boolean isBuilt=true;
 
     Scanner scan=new Scanner(System.in);
+    //ask the user to type in a word
     System.out.println("Type a word");
     String word=scan.nextLine();
     int length=word.length();
@@ -105,7 +110,7 @@ public class ScrabbleCalculator
    
      
 
-     
+     //count the letters in the word, if the one letter is used more than the time it can appear, it's not built
      for(int ber=0;ber<length;ber++)
      {
      if(word.substring(ber,ber+1).equalsIgnoreCase("a"))
@@ -412,7 +417,7 @@ public class ScrabbleCalculator
      
      
      
-     
+ //if the word is built, add the score of letters it have together    
 if(isBuilt)  
 {
 for(int num=0;num<length;num++)
@@ -523,9 +528,12 @@ if(word.substring(num,num+1).equalsIgnoreCase("a"))
      }
      }
           System.out.println(score);
+          //print out the score
       }
+      scan.close();
+      //close the scanner
      }
- }
+}
    
     
     
