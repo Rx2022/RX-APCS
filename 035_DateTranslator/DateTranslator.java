@@ -33,11 +33,11 @@ public class DateTranslator
         DateTranslator pony=new DateTranslator(intYear,intMonth,intDay,stringFormat);
         
         //call the method
-        if((pony.format).equals("American"))
+        if((pony.format).equalsIgnoreCase("American"))
         {
             pony.printAmerican();
         }
-        else if((pony.format).equals("European"))
+        else if((pony.format).equalsIgnoreCase("European"))
         {
             System.out.println(intDay+"/"+intMonth+"/"+intYear);
         }
