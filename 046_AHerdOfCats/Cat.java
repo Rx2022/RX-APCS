@@ -12,4 +12,16 @@ public class Cat
     {
 
     }
+    public String getName()
+    {
+     return n;
+    }
+    public int getWeight()
+    {
+        return w;
+    }
+    public void setWeight()
+    {
+    w++;
+    }
 }
