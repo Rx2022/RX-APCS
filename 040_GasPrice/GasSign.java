@@ -17,6 +17,6 @@ public class GasSign
 //method to print the name and the price
     public void gasPrint(GasPriceTracker x)
     {
-        System.out.println("The type of the gas is "+x.getName()+", aNd the price is "+x.getPrice());
+        System.out.println("The type of the gas is "+x.getName()+", and the price is "+x.getPrice());
     }
 }
